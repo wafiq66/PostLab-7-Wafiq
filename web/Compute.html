@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Compute Tax</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h3>Compute Tax</h3>
+        <form action="calculate_tax.do" method="POST">
+            Product Price:<input type="text" name="price" required> <br> <br>
+            Type of tax:<select name="tax">
+                <option value="sales">Sales</option>
+                <option value="good">Good</option>
+                <option value="services">Services</option>
+            </select> <br> <br>
+            <input type="submit" value="Compute Tax">
+            <input type="reset" value="Reset">
+        </form>
+    </body>
+</html>
